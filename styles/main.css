@@ -1,0 +1,322 @@
+h1,
+h2 {
+  color: #d34629;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* .que-es {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1057%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(212%2c 212%2c 212%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c475.939C99.529%2c496.221%2c215.497%2c522.997%2c298.32%2c464.195C381.193%2c405.357%2c367.884%2c279.71%2c407.951%2c186.305C446.789%2c95.765%2c523.295%2c22.058%2c530.137%2c-76.222C537.758%2c-185.703%2c533.089%2c-318.904%2c447.941%2c-388.143C361.257%2c-458.631%2c231.7%2c-401.7%2c120.248%2c-409.527C36.496%2c-415.409%2c-44.975%2c-451.157%2c-125.8%2c-428.435C-207.084%2c-405.584%2c-261.614%2c-336.626%2c-327.391%2c-283.686C-408.964%2c-218.032%2c-546.677%2c-184.339%2c-558.372%2c-80.282C-570.171%2c24.694%2c-442.27%2c88.574%2c-378.714%2c172.953C-330.229%2c237.323%2c-292.159%2c306.348%2c-229.232%2c356.692C-160.586%2c411.612%2c-86.142%2c458.385%2c0%2c475.939' fill='%23b6b6b6'%3e%3c/path%3e%3cpath d='M1440 1092.627C1538.449 1080.867 1617.902 1019.207 1706.462 974.623 1806.847 924.086 1933.3 907.446 1994.7530000000002 813.347 2058.142 716.284 2072.751 583.621 2032.915 474.752 1994.77 370.505 1869.442 334.379 1790.82 256.013 1719.779 185.20299999999997 1679.219 89.13 1593.604 36.87099999999998 1490.282-26.196000000000026 1371.605-102.45799999999997 1254.644-71.26499999999999 1137.672-40.06899999999996 1088.16 95.231 1014.5129999999999 191.313 945.565 281.265 865.793 363.659 837.209 473.332 806.558 590.934 792.557 722.207 847.951 830.38 902.683 937.26 1019.434 994.944 1129.224 1043.576 1227.094 1086.9279999999999 1333.714 1105.3229999999999 1440 1092.627' fill='%23f2f2f2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1057'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: initial;
+} */
+
+/* HEADER */
+
+header {
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 1.3s;
+  background-color: black;
+  color: #141e42;
+  z-index: 10;
+  padding: 30px 15px;
+  opacity: 0;
+  justify-content: space-around;
+}
+
+header.sticky {
+  /* background: #3a3c42; */
+  opacity: 0.9;
+  padding: 5px 10px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+header.sticky a {
+  color: #d34629 !important;
+}
+
+.navbar-brand {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+header a {
+  color: #3a3c42 !important;
+}
+
+/* TITLE */
+
+.title {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title .banner {
+  margin: 0 auto;
+  width: 95%;
+  height: 20vh;
+}
+
+.title .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.saltarina {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  font-size: 1.6em;
+  border: 0.1em solid white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  color: black;
+  animation-name: saltar;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes saltar {
+  0% {
+    bottom: 2rem;
+  }
+  50% {
+    color: #d34629;
+    bottom: 4rem;
+  }
+  100% {
+    bottom: 2rem;
+  }
+}
+
+/* QUE ES */
+
+.que-es {
+  height: 115vh;
+}
+
+.que-es h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.que-es .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.que-es .descripcion {
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* CARACTERISTICAS */
+.caracteristicas {
+  min-height: 115vh;
+}
+
+.card {
+  /* background-color: #d4d4d4; */
+  background-color: #fff;
+  color: black;
+  height: 8rem;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel {
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.usos-frecuentes {
+  /* background-color: #d4d4d4; */
+  margin-top: 15rem;
+  height: 100vh;
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 0;
+}
+
+.usos-frecuentes ul li {
+  text-align: center;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.lista-usos {
+  padding: 0;
+}
+
+/* Imagenes */
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: contain;
+}
+
+/* Ficha tecnica */
+.ficha-tecnica {
+  margin-top: 20rem;
+}
+
+.table {
+  width: 95%;
+  margin: 0 auto;
+  border: 1px;
+  text-align: center;
+}
+
+/* FORM */
+
+.contact {
+  height: 90vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+.contact .info i {
+  font-size: 32px;
+  color: #d34629;
+  float: left;
+  line-height: 1;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #282828;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #5b5b5b;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact button[type="submit"] {
+  margin-top: 1rem;
+  background: #d34629;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.contact button[type="submit"]:hover {
+  background: #cd3d20;
+}
+
+@media (min-width: 768px) {
+  .title .banner {
+    width: 60%;
+  }
+
+  .que-es {
+    height: 115vh;
+  }
+
+  .que-es .descripcion {
+    font-size: 1.3rem;
+    line-height: 1.9;
+    letter-spacing: 1px;
+    margin-top: 5rem;
+  }
+
+  .ficha-tecnica {
+    /* height: 90vh; */
+  }
+
+  .contact {
+    height: 100vh;
+  }
+
+  .table {
+    width: 55%;
+  }
+
+  .lista-usos li {
+    padding: 3px 0 2px 25px;
+  }
+
+  .lista-usos {
+    padding-left: 2rem;
+  }
+}
