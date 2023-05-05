@@ -32,6 +32,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -40,7 +42,6 @@
         <div class="container">
           <a class="navbar-brand" href="./index.html">
             <img src="./assets/logo.png" alt="" srcset="" />
-            <!-- ECOAPO - Tecnología solar -->
           </a>
           <button
             class="navbar-toggler"
@@ -55,11 +56,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#courses">¿Qué es?</a>
-              <a class="nav-link" href="#contact">Características</a>
-              <a class="nav-link" href="#contact">Usos frecuentes</a>
-              <a class="nav-link" href="#contact">Ficha técnica</a>
-              <a class="nav-link" href="#contact">Contacto</a>
+              <a class="nav-link" href="#que-es">¿Qué es?</a>
+              <a class="nav-link" href="#caracteristicas">Características</a>
+              <a class="nav-link" href="#usos-frecuentes">Usos frecuentes</a>
+              <a class="nav-link" href="#ficha-tecnica">Ficha técnica</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </div>
           </div>
         </div>
@@ -67,30 +68,60 @@
     </header>
     <main>
       <section class="title mb-5">
-        <div class="banner">
+        <div
+          class="banner"
+          data-aos="fade-in"
+          data-aos-delay="70"
+          data-aos-duration="1500"
+        >
           <img src="./assets/logo 2.png" alt="" />
         </div>
         <a href="#banner" class="saltarina">
           <i class="fas fa-chevron-down"></i>
         </a>
       </section>
-      <section class="que-es mb-5">
+      <section id="que-es" class="que-es mb-5">
         <div class="container">
-          <h1 class="text-center">Fibra de Polipropileno</h1>
-          <p class="mb-5 descripcion">
-            Es un <b>multifilamento</b> que permite una <b>distribución uniforme</b> en la
-            masa (varios millones de fibras), <b>manteniendo la homogeneidad de la
-            mezcla</b> durante <i>más tiempo</i>, distribuyendo mejor los esfuerzos de
-            contracción interna que provocan, y <b>reduce</b> la <i>fisuración</i> durante la
-            retracción del hormigón producida por el fraguado y el ambiente
+          <h1
+            class="text-center"
+            data-aos="fade-down"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            Fibra de Polipropileno
+          </h1>
+          <p
+            class="mb-5 descripcion"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-duration="500"
+          >
+            Es un <b>multifilamento</b> que permite una
+            <b>distribución uniforme</b> en la masa (varios millones de fibras),
+            <b>manteniendo la homogeneidad de la mezcla</b> durante
+            <i>más tiempo</i>, distribuyendo mejor los esfuerzos de contracción
+            interna que provocan, y <b>reduce</b> la <i>fisuración</i> durante
+            la retracción del hormigón producida por el fraguado y el ambiente
             exterior (lluvia, luz solar, temperatura).
           </p>
         </div>
       </section>
-      <section class="caracteristicas">
+      <section id="caracteristicas" class="caracteristicas">
         <div class="container">
-          <h2 class="text-center mb-5">Características y propiedades</h2>
-          <div class="row mb-xl-5">
+          <h2
+            class="text-center mb-5"
+            data-aos="fade-down"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            Características y propiedades
+          </h2>
+          <div
+            class="row mb-xl-5"
+            data-aos="fade-up-right"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
             <div class="col-xl-3 col-sm-6 col-12 mt-2">
               <div class="card">
                 <div class="card-body">
@@ -123,7 +154,12 @@
               </div>
             </div>
           </div>
-          <div class="row mb-5">
+          <div
+            class="row mb-5"
+            data-aos="fade-up-left"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
             <div class="col-xl-3 col-sm-6 col-12 mt-2">
               <div class="card">
                 <div class="card-body">
@@ -162,9 +198,21 @@
         </div>
       </section>
 
-      <section class="usos-frecuentes mb-5">
-        <h2 class="text-center mb-5">Usos frecuentes</h2>
-        <div class="row">
+      <section id="usos-frecuentes" class="usos-frecuentes mb-5">
+        <h2
+          class="text-center mb-5"
+          data-aos="fade-down"
+          data-aos-delay="0"
+          data-aos-duration="500"
+        >
+          Usos frecuentes
+        </h2>
+        <div
+          class="row"
+          data-aos="zoom-in-up"
+          data-aos-delay="0"
+          data-aos-duration="500"
+        >
           <div class="col-sm-6">
             <ul class="lista-usos my-0">
               <li>Pavimentos de hormigón</li>
@@ -218,8 +266,15 @@
         </div>
       </section>
 
-      <section class="ficha-tecnica">
-        <h2 class="text-center mb-5">Ficha técnica</h2>
+      <section id="ficha-tecnica" class="ficha-tecnica">
+        <h2
+          class="text-center mb-5"
+          data-aos="fade-down"
+          data-aos-delay="0"
+          data-aos-duration="500"
+        >
+          Ficha técnica
+        </h2>
         <table class="table table-striped table-borderless">
           <tbody>
             <tr>
@@ -291,7 +346,7 @@
         </table>
       </section>
 
-      <section class="container contact row mt-5 mb-5 pb-5">
+      <section id="contacto" class="container contact row mt-5 mb-5 pb-5">
         <!-- <div class="row"> -->
         <div class="col-lg-5">
           <div class="info">
