@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/transition-style" />
   </head>
   <body>
     <header>
@@ -68,131 +69,56 @@
     </header>
     <main>
       <section class="title mb-5">
+        <!-- data-aos="fade-in"
+      data-aos-delay="70"
+      data-aos-duration="1500" -->
         <div
           class="banner"
-          data-aos="fade-in"
-          data-aos-delay="70"
-          data-aos-duration="1500"
+          data-aos="fade-down"
+          data-aos-delay="0"
+          data-aos-duration="900"
         >
           <img src="./assets/logo 2.png" alt="" />
         </div>
-        <a href="#banner" class="saltarina">
-          <i class="fas fa-chevron-down"></i>
-        </a>
+        <!-- data-aos="fade-down" data-aos-delay="0" data-aos-duration="900" -->
+        <div class="saltarina-container mb-5">
+          <a href="#que-es" class="saltarina opacity-0">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
       </section>
       <section id="que-es" class="que-es mb-5">
         <div class="container">
-          <h1
-            class="text-center"
-            data-aos="fade-down"
-            data-aos-delay="0"
-            data-aos-duration="500"
-          >
-            Fibra de Polipropileno
-          </h1>
-          <p
-            class="mb-5 descripcion"
-            data-aos="fade-down"
-            data-aos-delay="100"
-            data-aos-duration="500"
-          >
-            Es un <b>multifilamento</b> que permite una
-            <b>distribución uniforme</b> en la masa (varios millones de fibras),
-            <b>manteniendo la homogeneidad de la mezcla</b> durante
-            <i>más tiempo</i>, distribuyendo mejor los esfuerzos de contracción
-            interna que provocan, y <b>reduce</b> la <i>fisuración</i> durante
-            la retracción del hormigón producida por el fraguado y el ambiente
-            exterior (lluvia, luz solar, temperatura).
-          </p>
-        </div>
-      </section>
-      <section id="caracteristicas" class="caracteristicas">
-        <div class="container">
-          <h2
-            class="text-center mb-5"
-            data-aos="fade-down"
-            data-aos-delay="0"
-            data-aos-duration="500"
-          >
-            Características y propiedades
-          </h2>
-          <div
-            class="row mb-xl-5"
-            data-aos="fade-up-right"
-            data-aos-delay="0"
-            data-aos-duration="500"
-          >
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>Muy buena relación costo/beneficio.</p>
-                </div>
+          <div class="row">
+            <div class="col-12 col-xl-4 mb-5 mb-xl-0">
+              <div class="image">
+                <img src="./assets/1.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>Promueven la formación de un refuerzo tridimensional.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>Aumenta la resistencia al impacto y evita la erosión.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>
-                    Funciona como barrera al vapor de agua, ya que evita el
-                    traspaso de humedad.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="row mb-5"
-            data-aos="fade-up-left"
-            data-aos-delay="0"
-            data-aos-duration="500"
-          >
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>Prolongan la vida útil en hormigones y morteros.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>Aumenta la resistencia a tracción y flexión.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>
-                    Son estables, no absorben agua por lo cual esta no puede
-                    alterar sus propiedades.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <p>
-                    Mejoran notablemente las características del hormigon tanto
-                    en estado fresco como endurecido.
-                  </p>
-                </div>
-              </div>
+            <div class="col-12 col-xl-8">
+              <h1
+                class="text-center"
+                data-aos="fade-down"
+                data-aos-delay="0"
+                data-aos-duration="500"
+              >
+                Fibra de Polipropileno
+              </h1>
+              <p
+                class="mb-5 descripcion"
+                data-aos="fade-down"
+                data-aos-delay="100"
+                data-aos-duration="500"
+              >
+                Es un <b>multifilamento</b> que permite una
+                <b>distribución uniforme</b> en la masa (varios millones de
+                fibras), <b>manteniendo la homogeneidad de la mezcla</b> durante
+                <i>más tiempo</i>, distribuyendo mejor los esfuerzos de
+                contracción interna que provocan, y <b>reduce</b> la
+                <i>fisuración</i> durante la retracción del hormigón producida
+                por el fraguado y el ambiente exterior (lluvia, luz solar,
+                temperatura).
+              </p>
             </div>
           </div>
         </div>
@@ -235,38 +161,156 @@
           </div>
         </div>
       </section>
-      <section class="imagenes mt-5">
-        <div id="sliders" class="carousel slide carousel-dark">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/1.jpg" class="d-block w-100" alt="..." />
+
+      <!-- <section id="ficha-tecnica" class="ficha-tecnica"> -->
+      <section id="caracteristicas" class="caracteristicas">
+        <div class="container">
+          <h2 class="text-center mb-5">Características y propiedades</h2>
+          <div class="row">
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-right"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fa fa-light fa-dollar-sign"></i>
+                  </div>
+                  <p class="card-text">Muy buena relación costo/beneficio.</p>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item active">
-              <img src="./assets/2.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-left"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fal fa-cube"></i>
+                  </div>
+                  <p class="card-text">
+                    Promueven la formación de un refuerzo tridimensional.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-right"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <p class="card-text">
+                    Aumenta la resistencia al impacto y evita la erosión.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-left"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-water"></i>
+                  </div>
+                  <p class="card-text">
+                    Funciona como barrera al vapor de agua, ya que evita el
+                    traspaso de humedad.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#sliders"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#sliders"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="row mb-5">
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-right"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-hourglass-end"></i>
+                  </div>
+                  <p class="card-text">
+                    Prolongan la vida útil en hormigones y morteros.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-left"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-link"></i>
+                  </div>
+                  <p class="card-text">
+                    Aumenta la resistencia a tracción y flexión.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-right"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-tint-slash"></i>
+                  </div>
+                  <p class="card-text">
+                    Son estables, no absorben agua por lo cual esta no puede
+                    alterar sus propiedades.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-12 mt-4"
+              data-aos="fade-up-left"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas far fa-wrench"></i>
+                  </div>
+                  <p class="card-text">
+                    Mejoran notablemente las características del hormigon tanto
+                    en estado fresco como endurecido.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="ficha-tecnica" class="ficha-tecnica">
+      <section id="ficha-tecnica" class="mb-5">
         <h2
           class="text-center mb-5"
           data-aos="fade-down"
@@ -336,8 +380,7 @@
               <td>Normas</td>
               <td>
                 <p>
-                  ASTM C1116 1997 Type III <br />
-                  TSE EN 14889 Part II Type 1.A<br />
+                  ASTM C1116 1997 Type III, TSE EN 14889 Part II Type 1.A,<br />
                   BS 14889-2<br />
                 </p>
               </td>
@@ -347,76 +390,86 @@
       </section>
 
       <section id="contacto" class="container contact row mt-5 mb-5 pb-5">
-        <!-- <div class="row"> -->
-        <div class="col-lg-5">
-          <div class="info">
-            <div class="address">
-              <i class="ri-map-pin-2-fill"></i>
-              <h4>Ubicación</h4>
-              <a href="https://goo.gl/maps/wix3g5hPRX4cxZnn9"
-                ><p>Colectora Oeste Ramal Pilar 3135, Don Torcuato</p></a
-              >
-            </div>
+        <div
+          class="text-center mb-4 mb-xl-0"
+          data-aos="fade-down"
+          data-aos-delay="0"
+          data-aos-duration="500"
+        >
+          <h2 class="mb-2">Contacto</h2>
+          <p class="text-center">¡No dudes en escribirnos!</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="info">
+              <div class="address">
+                <i class="ri-map-pin-2-fill"></i>
+                <h4>Ubicación</h4>
+                <a href="https://goo.gl/maps/wix3g5hPRX4cxZnn9"
+                  ><p>Colectora Oeste Ramal Pilar 3135, Don Torcuato</p></a
+                >
+              </div>
 
-            <div class="email">
-              <i class="fas fa-solid fa-envelope"></i>
-              <h4>Mail</h4>
-              <p>info@produobra.com.ar</p>
-            </div>
+              <div class="email">
+                <i class="fas fa-solid fa-envelope"></i>
+                <h4>Mail</h4>
+                <p>info@produobra.com.ar</p>
+              </div>
 
-            <div class="phone">
-              <i class="fas fa-solid fa-phone"></i>
-              <h4>Teléfono</h4>
-              <p>1159692099</p>
+              <div class="phone">
+                <i class="fas fa-solid fa-phone"></i>
+                <h4>Teléfono</h4>
+                <p>1159692099</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-7 mt-5 mt-lg-0">
-          <form method="POST" class="php-email-form form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  id="name"
-                  placeholder="Nombre"
-                  required
-                />
+          <div class="col-lg-7 mt-5 mt-lg-0">
+            <form method="POST" class="php-email-form form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nombre"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Mail"
+                    required
+                  />
+                </div>
               </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input
-                  type="email"
+              <div class="form-group mt-3">
+                <textarea
                   class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="Mail"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Mensaje"
                   required
-                />
+                ></textarea>
               </div>
-            </div>
-            <div class="form-group mt-3">
-              <textarea
-                class="form-control"
-                name="message"
-                id="message"
-                rows="5"
-                placeholder="Mensaje"
-                required
-              ></textarea>
-            </div>
-            <div class="text-center d-block">
-              <button class="w-100" type="submit">Enviar</button>
-            </div>
-          </form>
-          <!-- </div> -->
+              <div class="text-center d-block">
+                <button class="w-100" type="submit">Enviar</button>
+              </div>
+            </form>
+            <!-- </div> -->
+          </div>
         </div>
       </section>
     </main>
     <footer></footer>
     <a
-      href="https://api.whatsapp.com/send?phone=+5491137917559&amp;text=Hola!%20"
+      href="https://api.whatsapp.com/send?phone=+5491159692099&amp;text=Hola!%20"
       class="whatsapp"
       target="_blank"
       ><i class="fab fa-whatsapp"></i
