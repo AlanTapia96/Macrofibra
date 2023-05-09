@@ -11,6 +11,12 @@ h2 {
 
 body {
   overflow-x: hidden;
+  background-color: #d4d4d4;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+}
+
+section {
+  position: relative;
 }
 
 /* HEADER */
@@ -74,13 +80,26 @@ header a {
 [transition-style="in:wipe:down"] {
   animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
 } */
+main {
+  position: relative;
+}
+
+.border {
+  background-color: #141e42;
+  width: 7%;
+  left: -1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 
 .title {
-  background-color: #fff;
+  padding-left: 7vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .title .banner {
@@ -99,7 +118,7 @@ header a {
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  bottom: 0em;
+  bottom: -4em;
   margin-bottom: 3rem;
 }
 
@@ -166,6 +185,7 @@ header a {
 .que-es h1 {
   text-align: center;
   font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .que-es .image {
@@ -246,6 +266,7 @@ i {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-left: 7vw;
   /* clip-path: polygon(0 0, 50% 3rem, 100% 0, 100% 100%, 0 100%); */
   margin-top: -3rem;
   color: black;
@@ -275,6 +296,7 @@ ul li::before {
 
 /* Ficha tecnica */
 #ficha-tecnica {
+  padding-left: 7%;
   padding-top: 6rem;
 }
 
@@ -306,9 +328,10 @@ ul li::before {
 /* FORM */
 
 .contact {
-  height: 75vh;
+  /* height: 75vh; */
   width: 100%;
   margin: 0 auto;
+  padding-left: 7vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,7 +339,7 @@ ul li::before {
 
 .contact .info {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
 }
 .contact .info i {
   font-size: 32px;
@@ -386,6 +409,29 @@ ul li::before {
   background-color: white;
 }
 
+/* .line {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-45deg);
+  width: 5vw;
+  height: 5vw;
+  background-color: #cd3d20;
+} */
+
+.usos-frecuentes::after,
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  right: 0rem;
+  width: 2rem;
+  height: 1rem;
+  border-style: solid;
+  border-width: 0 0 5rem 3rem;
+  border-color: transparent transparent #d34629 transparent;
+}
+
 @media (min-width: 768px) {
   .title .banner {
     width: 60%;
@@ -399,7 +445,7 @@ ul li::before {
   }
 
   .contact {
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   .table {
