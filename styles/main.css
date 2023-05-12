@@ -4,12 +4,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  font-size: 14px;
+}
+
 h1,
 h2 {
   color: #d34629;
 }
 
-body {
+main {
   overflow-x: hidden;
   background-color: #d4d4d4;
   background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
@@ -84,7 +88,7 @@ main {
   position: relative;
 }
 
-.border {
+.border-blue {
   background-color: #141e42;
   width: 7%;
   left: -1px;
@@ -184,7 +188,8 @@ main {
 
 .que-es h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
   font-weight: 800;
 }
 
@@ -234,7 +239,8 @@ main {
   min-height: 100vh;
 }
 
-i {
+.caracteristicas i {
+  color: #d34629;
   font-size: 2rem;
 }
 
@@ -265,12 +271,27 @@ i {
 .usos-frecuentes {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding-left: 7vw;
-  /* clip-path: polygon(0 0, 50% 3rem, 100% 0, 100% 100%, 0 100%); */
   margin-top: -3rem;
   color: black;
-  height: 50vh;
+  padding: 3rem 0 0 3rem;
+  height: auto;
+}
+
+.usos-frecuentes .img-2,
+.usos-frecuentes .img-1 {
+  height: auto;
+  justify-content: center;
+}
+
+.usos-frecuentes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
 }
 
 ul li {
@@ -281,6 +302,8 @@ ul li {
 
 .usos-frecuentes ul li {
   text-align: center;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
 }
 
 ul li::before {
@@ -298,12 +321,39 @@ ul li::before {
 #ficha-tecnica {
   padding-left: 7%;
   padding-top: 6rem;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 3rem),
+    50% 100%,
+    0 calc(100% - 3rem)
+  );
+  /* clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 3rem),
+    50% 100%,
+    0 calc(100% - 3rem)
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10rem),
+    50% 100%,
+    0 calc(100% - 10rem)
+  ); */
 }
 
-.ficha-tecnica {
-  clip-path: polygon(0 0, 50% 3rem, 100% 0, 100% 100%, 0 100%);
-  padding-top: 5rem;
-  /* height: 90vh; */
+#ficha-tecnica .img {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+#ficha-tecnica img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .table {
@@ -328,37 +378,43 @@ ul li::before {
 /* FORM */
 
 .contact {
-  /* height: 75vh; */
+  clip-path: polygon(0 0, 50% 3rem, 100% 0, 100% 100%, 0 100%);
+  margin-top: calc(0px - 3rem);
+  background-color: rgb(55, 52, 52);
   width: 100%;
-  margin: 0 auto;
-  padding-left: 7vw;
+  padding: 6rem 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  color: #fff;
+}
+
+.contact-title {
+  margin-bottom: 5rem;
 }
 
 .contact .info {
   width: 100%;
+  padding-left: 12%;
   /* background: #fff; */
 }
 .contact .info i {
-  font-size: 32px;
+  font-size: 2rem;
   color: #d34629;
   float: left;
   line-height: 1;
 }
 .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
+  padding: 0 0 0 3rem;
+  /* font-size: 1.5rem; */
   font-weight: 600;
   margin-bottom: 5px;
-  color: #282828;
+  color: #fff;
 }
 .contact .info p {
-  padding: 0 0 0 60px;
+  padding: 0;
   margin-bottom: 0;
-  font-size: 14px;
-  color: #5b5b5b;
+  color: #fff;
 }
 
 .contact a {
@@ -409,16 +465,6 @@ ul li::before {
   background-color: white;
 }
 
-/* .line {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  transform: rotate(-45deg);
-  width: 5vw;
-  height: 5vw;
-  background-color: #cd3d20;
-} */
-
 .usos-frecuentes::after,
 .title::after {
   content: "";
@@ -432,7 +478,70 @@ ul li::before {
   border-color: transparent transparent #d34629 transparent;
 }
 
+footer {
+  position: relative;
+  /* background-color: #4d4848; */
+  background-color: rgb(40, 37, 37);
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+  margin-top: -1px;
+}
+
+#footer h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+#footer p {
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+#footer .social-links {
+  margin: 0 0 1.5rem 0;
+}
+#footer .social-links a {
+  display: inline-block;
+  background: #d34629;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  transition: 0.3s;
+}
+
+#footer .social-links i {
+  font-size: 1rem;
+}
+
+#footer .social-links a:hover {
+  background: #fff;
+  color: #920417;
+  text-decoration: none;
+}
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+.dm a {
+  color: #cd3d20;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
   .title .banner {
     width: 60%;
   }
@@ -444,12 +553,29 @@ ul li::before {
     margin-top: 5rem;
   }
 
+  .que-es h1 {
+    font-size: 2.5rem;
+  }
+
+  .usos-frecuentes .img-2,
+  .usos-frecuentes .img-1 {
+    height: 50vh;
+  }
+
+  #ficha-tecnica .img {
+    height: 85vh;
+  }
+
   .contact {
-    /* height: 70vh; */
+    /* height: 85vh; */
+  }
+
+  .contact .info p {
+    padding-left: 3rem;
   }
 
   .table {
-    width: 65%;
+    width: 100%;
   }
 
   .lista-usos li {
@@ -461,8 +587,8 @@ ul li::before {
   }
 }
 
-/* @media (min-width: 1024px) {
-  .que-es {
-    height: 90vh;
+@media (min-width: 991px) {
+  .contact .info {
+    padding: 0;
   }
-} */
+}

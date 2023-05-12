@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./assets/logo.png" />
     <title>Fibra de Polipropileno</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="https://unpkg.com/transition-style" />
   </head>
-  <body">
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -68,9 +68,7 @@
       </nav>
     </header>
     <main>
-      <div class="border" 
-      transition-style="in:wipe:right"
-      ></div>
+      <div class="border-blue" transition-style="in:wipe:right"></div>
       <section class="title mb-5">
         <!-- data-aos="fade-in"
       data-aos-delay="70"
@@ -128,44 +126,60 @@
       </section>
 
       <section id="usos-frecuentes" class="usos-frecuentes mb-5">
-        <h2
-          class="text-center mb-5"
-          data-aos="fade-down"
-          data-aos-delay="0"
-          data-aos-duration="500"
-        >
-          Usos frecuentes
-        </h2>
-        <div
-          class="row"
-          data-aos="zoom-in-up"
-          data-aos-delay="0"
-          data-aos-duration="500"
-        >
-          <div class="col-sm-6">
-            <ul class="lista-usos my-0">
-              <li>Pavimentos de hormigón</li>
-              <li>Autopistas y bacheos</li>
-              <li>Canales - Represas</li>
-              <li>Muelles y diques</li>
-              <li>
-                Pisos industriales: estaciones de servicio, pisos deportivos,
-                pavimentos articulados
-              </li>
-            </ul>
+        <div class="container">
+          <h2
+            class="text-center mb-5"
+            data-aos="fade-down"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            Usos frecuentes
+          </h2>
+          <div
+            class="row justify-content-center"
+            data-aos="zoom-in-right"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            <div
+              class="col-sm-6 justify-content-center align-items-center mb-5 mb-xl-0"
+            >
+              <ul class="lista-usos my-0">
+                <li>Pavimentos de hormigón</li>
+                <li>Autopistas y bacheos</li>
+                <li>Canales - Represas</li>
+                <li>Muelles y diques</li>
+                <li>
+                  Pisos industriales: estaciones de servicio, pisos deportivos,
+                  pavimentos articulados
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4 img-1">
+              <img src="./assets/5.jpg" alt="" />
+            </div>
           </div>
-          <div class="col-sm-6">
-            <ul class="lista-usos my-0">
-              <li>Banquinas / Playones</li>
-              <li>Pistas de aviación</li>
-              <li>Productos premoldeados</li>
-              <li>Revoques cementicios</li>
-            </ul>
+          <div
+            class="row mt-5 img-2 justify-content-center"
+            data-aos="zoom-in-left"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            <div class="col-sm-4 h-100">
+              <img src="./assets/3.JPG" alt="" />
+            </div>
+            <div class="col-sm-5 justify-content-center align-items-center">
+              <ul class="lista-usos my-0">
+                <li>Banquinas / Playones</li>
+                <li>Pistas de aviación</li>
+                <li>Productos premoldeados</li>
+                <li>Revoques cementicios</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- <section id="ficha-tecnica" class="ficha-tecnica"> -->
       <section id="caracteristicas" class="caracteristicas">
         <div class="container">
           <h2 class="text-center mb-5">Características y propiedades</h2>
@@ -314,163 +328,213 @@
       </section>
 
       <section id="ficha-tecnica" class="mb-5">
-        <h2
-          class="text-center mb-5"
-          data-aos="fade-down"
-          data-aos-delay="0"
-          data-aos-duration="500"
-        >
-          Ficha técnica
-        </h2>
-        <table class="table table-striped table-borderless">
-          <tbody>
-            <tr>
-              <td>Materia Prima</td>
-              <td>Polipropileno</td>
-            </tr>
-            <tr>
-              <td>Longitud</td>
-              <td>19 ± 5%</td>
-            </tr>
-            <tr>
-              <td>Peso Especifico</td>
-              <td>0,91 g/cm³ ± 0,01</td>
-            </tr>
-            <tr>
-              <td>Color</td>
-              <td>Transparente</td>
-            </tr>
-            <tr>
-              <td>Diametro Promedio</td>
-              <td>20 -30 µ</td>
-            </tr>
-            <tr>
-              <td>Punto de Fusion</td>
-              <td>160/170 °C</td>
-            </tr>
-            <tr>
-              <td>Resistencia a Acidos</td>
-              <td>Estable</td>
-            </tr>
-            <tr>
-              <td>Resistencia a Agentes Quimicos</td>
-              <td>Estable</td>
-            </tr>
-            <tr>
-              <td>Resistencia a Solventes Organicos</td>
-              <td>
-                Se disuelve ante la exposición a solventes clorados a alta
-                temperatura
-              </td>
-            </tr>
-            <tr>
-              <td>Resistencia al Ataque Biologico</td>
-              <td>Estable</td>
-            </tr>
-            <tr>
-              <td>Compatibilidad en el Cemento</td>
-              <td>Excelente</td>
-            </tr>
-            <tr>
-              <td>Resistencia al Alcalis</td>
-              <td>Fuerte</td>
-            </tr>
-            <tr>
-              <td>Absorcion de Agua</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Normas</td>
-              <td>
-                <p>
-                  ASTM C1116 1997 Type III, TSE EN 14889 Part II Type 1.A,<br />
-                  BS 14889-2<br />
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section id="contacto" class="container contact row mt-5 pb-5">
-        <div
-          class="text-center mb-4 mb-xl-2"
-          data-aos="fade-down"
-          data-aos-delay="0"
-          data-aos-duration="500"
-        >
-          <h2 class="mb-2">Contacto</h2>
-          <p class="text-center">¡No dudes en escribirnos!</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="info">
-              <div class="address">
-                <i class="ri-map-pin-2-fill"></i>
-                <h4>Ubicación</h4>
-                <a href="https://goo.gl/maps/wix3g5hPRX4cxZnn9"
-                  ><p>Colectora Oeste Ramal Pilar 3135, Don Torcuato</p></a
-                >
-              </div>
-
-              <div class="email">
-                <i class="fas fa-solid fa-envelope"></i>
-                <h4>Mail</h4>
-                <p>info@produobra.com.ar</p>
-              </div>
-
-              <div class="phone">
-                <i class="fas fa-solid fa-phone"></i>
-                <h4>Teléfono</h4>
-                <p>1159692099</p>
+        <div class="container">
+          <h2
+            class="text-center mb-5"
+            data-aos="fade-down"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            Ficha técnica
+          </h2>
+          <div
+            class="row flex-column flex-xl-row"
+            data-aos="fade-in"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            <div class="col-12 col-xl-6 mb-5">
+              <table class="table table-striped table-borderless">
+                <tbody>
+                  <tr>
+                    <td>Materia Prima</td>
+                    <td>Polipropileno</td>
+                  </tr>
+                  <tr>
+                    <td>Longitud</td>
+                    <td>19 ± 5%</td>
+                  </tr>
+                  <tr>
+                    <td>Peso Especifico</td>
+                    <td>0,91 g/cm³ ± 0,01</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>Transparente</td>
+                  </tr>
+                  <tr>
+                    <td>Diametro Promedio</td>
+                    <td>20 -30 µ</td>
+                  </tr>
+                  <tr>
+                    <td>Punto de Fusion</td>
+                    <td>160/170 °C</td>
+                  </tr>
+                  <tr>
+                    <td>Resistencia a Acidos</td>
+                    <td>Estable</td>
+                  </tr>
+                  <tr>
+                    <td>Resistencia a Agentes Quimicos</td>
+                    <td>Estable</td>
+                  </tr>
+                  <tr>
+                    <td>Resistencia a Solventes Organicos</td>
+                    <td>
+                      Se disuelve ante la exposición a solventes clorados a alta
+                      temperatura
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Resistencia al Ataque Biologico</td>
+                    <td>Estable</td>
+                  </tr>
+                  <tr>
+                    <td>Compatibilidad en el Cemento</td>
+                    <td>Excelente</td>
+                  </tr>
+                  <tr>
+                    <td>Resistencia al Alcalis</td>
+                    <td>Fuerte</td>
+                  </tr>
+                  <tr>
+                    <td>Absorcion de Agua</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Normas</td>
+                    <td>
+                      <p>
+                        ASTM C1116 1997 Type III, TSE EN 14889 Part II Type
+                        1.A,<br />
+                        BS 14889-2<br />
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="img">
+                <img src="./assets/2.jpg" alt="" />
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-7 mt-5 mt-lg-0">
-            <form method="POST" class="php-email-form form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    placeholder="Nombre"
-                    required
-                  />
+      <section id="contacto" class="contact mt-5">
+        <div class="container">
+          <div
+            class="text-center contact-title"
+            data-aos="fade-down"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            <h2 class="mb-2">Contacto</h2>
+            <p class="text-center">¡No dudes en escribirnos!</p>
+          </div>
+          <div
+            class="row"
+            data-aos="fade-in"
+            data-aos-delay="0"
+            data-aos-duration="800"
+          >
+            <div class="col-lg-5">
+              <div class="info">
+                <div class="address">
+                  <i class="ri-map-pin-2-fill"></i>
+                  <h4>Ubicación</h4>
+                  <a href="https://goo.gl/maps/wix3g5hPRX4cxZnn9"
+                    ><p>Colectora Oeste Ramal Pilar 3135, Don Torcuato</p></a
+                  >
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Mail"
-                    required
-                  />
+
+                <div class="email">
+                  <i class="fas fa-solid fa-envelope"></i>
+                  <h4>Mail</h4>
+                  <p>info@produobra.com.ar</p>
+                </div>
+
+                <div class="phone">
+                  <i class="fas fa-solid fa-phone"></i>
+                  <h4>Teléfono</h4>
+                  <p>1159692099</p>
                 </div>
               </div>
-              <div class="form-group mt-3">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  id="message"
-                  rows="5"
-                  placeholder="Mensaje"
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center d-block">
-                <button class="w-100" type="submit">Enviar</button>
-              </div>
-            </form>
-            <!-- </div> -->
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0">
+              <form method="POST" class="php-email-form form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Mail"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    rows="5"
+                    placeholder="Mensaje"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center d-block">
+                  <button class="w-100" type="submit">Enviar</button>
+                </div>
+              </form>
+              <!-- </div> -->
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="container">
+        <h3>PRODUOBRA</h3>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/produobra?mibextid=ZbWKwL"
+            class="facebook"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a
+            href="https://instagram.com/produobra?igshid=NTc4MTIwNjQ2YQ=="
+            class="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Produobra</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="dm">
+          Sitio desarrollado por
+          <a href="https://www.instagram.com/somos.dm/?hl=es" target="_blank"
+            >DM</a
+          >
+        </div>
+      </div>
+    </footer>
     <a
       href="https://api.whatsapp.com/send?phone=+5491159692099&amp;text=Hola!%20"
       class="whatsapp"
