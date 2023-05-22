@@ -45,11 +45,41 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <link rel="stylesheet" href="https://unpkg.com/transition-style" />
   </head>
   <body>
+    <div class="border-blue" transition-style="in:wipe:right"></div>
+    <div class="pre-header">
+      <div class="container justify-content-between justify-content-md-between">
+        <div class="phone d-none d-md-flex">
+          <i class="fas fa-solid fa-phone"></i>
+          <p>
+            <a href="tel:01159692099">011-5969-2099</a> /
+            <a href="tel:01128990770">011-2899-0770</a>
+          </p>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/produobra?mibextid=ZbWKwL"
+            class="facebook me-2"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a
+            href="https://instagram.com/produobra?igshid=NTc4MTIwNjQ2YQ=="
+            class="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="email d-md-flex">
+          <i class="fas fa-solid fa-envelope"></i>
+          <p>
+            <a href="mailto:info@produobra.com.ar">info@produobra.com.ar</a>
+          </p>
+        </div>
+      </div>
+    </div>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
-            <img src="./assets/logo-negro.png" alt="" srcset="" />
+            <img src="./assets/logo-blanco.png" alt="" srcset="" />
           </a>
           <button
             class="navbar-toggler"
@@ -65,9 +95,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="#que-es">¿Qué es?</a>
-              <a class="nav-link" href="#caracteristicas">Características</a>
               <a class="nav-link" href="#usos-frecuentes">Usos frecuentes</a>
+              <a class="nav-link" href="#caracteristicas">Características</a>
               <a class="nav-link" href="#ficha-tecnica">Ficha técnica</a>
+              <a class="nav-link" href="#preguntas-frecuentes"
+                >Preguntas frecuentes</a
+              >
               <a class="nav-link" href="#contacto">Contacto</a>
             </div>
           </div>
@@ -75,13 +108,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </nav>
     </header>
     <main>
-      <div class="border-blue" transition-style="in:wipe:right"></div>
-      <section class="title mb-5">
+      <section class="title">
         <div
           class="banner"
-          data-aos="fade-down"
+          data-aos="fade-in"
           data-aos-delay="0"
-          data-aos-duration="900"
+          data-aos-duration="1000"
         >
           <img src="./assets/logo 2.png" alt="" />
         </div>
@@ -101,15 +133,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </div>
             </div>
             <div class="col-12 col-xl-8">
-              <div class="titles-container">
-                <h1
-                  class="text-center"
-                  data-aos="fade-in"
-                  data-aos-delay="0"
-                  data-aos-duration="500"
-                >
-                  FIBRA DE POLIPROPILENO
-                </h1>
+              <div
+                class="titles-container"
+                data-aos="zoom-in-left"
+                data-aos-delay="0"
+                data-aos-duration="500"
+              >
+                <h1 class="text-center">FIBRA DE POLIPROPILENO</h1>
               </div>
               <p
                 class="mb-5 descripcion"
@@ -134,7 +164,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
       <section id="usos-frecuentes" class="usos-frecuentes mb-5">
         <div class="container">
-          <div class="titles-container mb-5">
+          <div
+            class="titles-container mb-5"
+            data-aos="zoom-out-down"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
             <h2
               class="text-center"
               data-aos="fade-in"
@@ -145,7 +180,38 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </h2>
           </div>
           <div class="row flex-column flex-lg-row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-5">
+              <div
+                class="row justify-content-center h-100"
+                data-aos="zoom-in-right"
+                data-aos-delay="0"
+                data-aos-duration="500"
+              >
+                <ul
+                  class="lista-usos text-center h-100 d-flex flex-column justify-content-center"
+                  -
+                >
+                  <li><span>Pavimentos de hormigón.</span></li>
+                  <li><span>Productos premoldeados.</span></li>
+                  <li>
+                    <span
+                      >Pisos industriales: <br />
+                      <i>
+                        - Estaciones de servicio <br />
+                        - Pisos deportivos <br />
+                        - Pavimentos articulados.</i
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-7"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
               <section class="section slider__section">
                 <div class="container slider__wrapper">
                   <div class="slider__column splide">
@@ -156,9 +222,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </li>
                         <li class="splide__slide">
                           <img src="./assets/carousel-4.JPG" alt="Slider" />
-                        </li>
-                        <li class="splide__slide">
-                          <img src="./assets/carousel-3.jpeg" alt="Slider" />
                         </li>
                         <li class="splide__slide">
                           <img src="./assets/carousel-2.jpeg" alt="Slider" />
@@ -176,41 +239,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </section>
             </div>
-            <div class="col-12 col-lg-5">
-              <div
-                class="row justify-content-center"
-                data-aos="zoom-in-right"
-                data-aos-delay="0"
-                data-aos-duration="500"
-              >
-                <ul class="lista-usos" ->
-                  <li>- <b>Pavimentos de hormigón.</b></li>
-                  <li>- <b>Productos premoldeados.</b></li>
-                  <li>
-                    -
-                    <b
-                      >Pisos industriales: <br />
-                      Estaciones de servicio, pisos deportivos, pavimentos
-                      articulados</b
-                    >
-                    .
-                  </li>
-                  <li>- Muelles y diques.</li>
-                  <li>- Banquinas / Playones.</li>
-                  <li>- Pistas de aviación.</li>
-                  <li>- Autopistas / Bacheos.</li>
-                  <li>- Canales / Represas.</li>
-                  <li>- Revoques cementicios.</li>
-                </ul>
-              </div>
-            </div>
           </div>
+          <ul
+            class="d-flex mt-5 flex-column flex-lg-row"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="500"
+          >
+            <li>- Muelles y diques.</li>
+            <li>- Banquinas / Playones.</li>
+            <li>- Pistas de aviación.</li>
+            <li>- Autopistas / Bacheos.</li>
+            <li>- Canales / Represas.</li>
+            <li>- Revoques cementicios.</li>
+          </ul>
         </div>
       </section>
 
       <section id="caracteristicas" class="caracteristicas">
         <div class="container">
-          <div class="titles-container mb-5">
+          <div
+            class="titles-container mb-5"
+            data-aos="fade-up-right"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
             <h2
               class="text-center"
               data-aos="fade-in"
@@ -366,7 +419,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
       <section id="ficha-tecnica" class="mb-5">
         <div class="container">
-          <div class="titles-container mb-5">
+          <div
+            class="titles-container mb-5"
+            data-aos="zoom-out-left"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
             <h2
               class="text-center"
               data-aos="fade-in"
@@ -382,8 +440,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             data-aos-delay="0"
             data-aos-duration="500"
           >
-            <div class="col-12 col-xl-6 mb-5">
-              <table class="table table-striped table-borderless">
+            <div class="col-10 m-auto mb-5">
+              <table class="table">
                 <tbody>
                   <tr>
                     <td>Materia Prima</td>
@@ -453,7 +511,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </tbody>
               </table>
             </div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12">
               <div class="img">
                 <img src="./assets/2.jpg" alt="" />
               </div>
@@ -464,15 +522,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
       <section id="preguntas-frecuentes">
         <div class="container">
-          <div class="titles-container mb-5">
+          <div
+            class="titles-container mb-5"
+            data-aos="zoom-out-right"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
             <h2 class="text-center">Preguntas frecuentes</h2>
           </div>
           <div class="container">
-            <div class="accordion" id="accordionExample">
+            <div
+              class="accordion"
+              id="accordionExample"
+              data-aos="zoom-out-left"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
-                    class="accordion-button"
+                    class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
@@ -488,9 +557,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Para reducir la fisuración (fisuras x contracción)en el
-                    hormigón , revoques, etc.- Estas fisuras aparecen durante
-                    las primeras 24 Hs después de la colocación del hormigón.
+                    Para reducir la fisuración (fisuras por contracción) en el
+                    hormigón, revoques, etc. Estas fisuras aparecen durante las
+                    primeras 24 Hs después de la colocación del hormigón.
                   </div>
                 </div>
               </div>
@@ -515,7 +584,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <div class="accordion-body">
                     Se agrega una bolsita de 600 gramos por metro cubico de
                     hormigón. Una vez incorporada al hormigón por acción de la
-                    mezcla , se abren y se distribuyen en toda la masa.
+                    mezcla, se abren y se distribuyen en toda la masa.
                   </div>
                 </div>
               </div>
@@ -539,8 +608,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    NO – la FIBRA DE POLIPROPILENO NO la reemplaza – La malla
-                    metálica es reemplazada x la MACROFIBRA
+                    NO – <b>la FIBRA DE POLIPROPILENO NO </b> la reemplaza - La
+                    malla metálica es reemplazada por la MACROFIBRA.
                   </div>
                 </div>
               </div>
@@ -548,7 +617,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </section>
-
       <section id="contacto" class="contact mt-5">
         <div class="container">
           <div
