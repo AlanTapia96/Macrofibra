@@ -51,6 +51,7 @@ section {
   font-size: 1.5rem !important;
   margin: 0 auto;
   background-color: #d34629;
+  border-radius: 5px;
 }
 
 /* pre-header */
@@ -321,6 +322,11 @@ main {
   // margin-top: -3rem;
   color: black;
   height: auto;
+}
+
+.usos-frecuentes .card {
+  height: auto;
+  padding: 1rem 1rem;
 }
 
 .usos-frecuentes > ul {
