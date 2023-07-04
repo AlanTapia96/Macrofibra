@@ -1,17 +1,47 @@
-// window.addEventListener(
-//   "scroll",
-//   function () {
-//     const header = document.querySelector("header");
-//     header.classList.toggle("sticky", window.scrollY > 120);
-//   },
-//   { passive: true }
-// );
+const viewportObserver = new IntersectionObserver((entries, observer) => {
+  if (entries[0].isIntersecting) {
+    let typed = new Typed("#element", {
+      strings: [
+        "REEMPLAZA A LA MALLA METALICA DE REPARTICIÓN EN PISOS DE HORMIGÓN.",
+      ],
+      typeSpeed: 30,
+      loop: false,
+    });
 
-// document.addEventListener( 'DOMContentLoaded', function () {
+    observer.unobserve(entries[0].target);
+  }
+});
 
-// } );
+viewportObserver.observe(document.querySelector("#test"));
 
 window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 30);
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {});
+
+  document.querySelectorAll("nav a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const sectionId = this.getAttribute("href");
+      const section = document.querySelector(sectionId);
+      const navbarHeight = document.querySelector("nav").offsetHeight;
+      const offset = 100; // Distancia antes de la sección donde detener el desplazamiento
+
+      if (section) {
+        console.log(section.offsetTop);
+        console.log(navbarHeight);
+        const topOffset = section.offsetTop - navbarHeight + offset;
+        window.scroll({
+          top: topOffset,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+
   document.querySelector(".saltarina").classList.remove("opacity-0");
 
   const splide = new Splide(".splide", {

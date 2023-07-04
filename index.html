@@ -41,8 +41,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 "
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/transition-style" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
     <div class="border-blue" transition-style="in:wipe:right"></div>
@@ -78,7 +79,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
+          <a class="navbar-brand d-inline-block" href="./index.html">
             <img src="./assets/logo-blanco.png" alt="" srcset="" />
           </a>
           <button
@@ -98,9 +99,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <a class="nav-link" href="#usos-frecuentes">Usos frecuentes</a>
               <a class="nav-link" href="#caracteristicas">Características</a>
               <a class="nav-link" href="#ficha-tecnica">Ficha técnica</a>
-              <a class="nav-link" href="#preguntas-frecuentes"
-                >Preguntas frecuentes</a
-              >
               <a class="nav-link" href="#contacto">Contacto</a>
             </div>
           </div>
@@ -137,16 +135,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <h1 class="text-center">MACROFIBRAS</h1>
               </div>
               <p
+                class="funcion descripcion mt-4 mb-0"
+                data-aos="zoom-in-left"
+                data-aos-delay="0"
+                data-aos-duration="500"
+              >
+                <strong id="test">
+                  <span id="element"> </span>
+                </strong>
+              </p>
+              <p
                 class="mb-5 descripcion"
                 data-aos="fade-down"
                 data-aos-delay="100"
                 data-aos-duration="500"
               >
-                Son <strong>fibras sintéticas</strong> para el
-                <strong>refuerzo</strong> del hormigón, fabricadas por extrusión
-                con 100% de polipropileno virgen y deformadas mecánicamente para
-                dar una forma completamente apropiada para
-                <strong>maximizar el anclaje en el hormigón.</strong> <br />
+                Son <i>fibras sintéticas</i> para el
+                <b>refuerzo del hormigón</b>, fabricadas por extrusión con 100%
+                de polipropileno virgen y deformadas mecánicamente para dar una
+                forma completamente apropiada para
+                <b>maximizar el anclaje en el hormigón.</b> <br />
                 Las Macrofibras reemplazan de manera segura a las tradicionales
                 mallas de acero de refuerzo o mallas electrosoldadas de refuerzo
                 secundario en los pisos de hormigón.
@@ -213,56 +221,53 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 data-aos-duration="500"
               >
                 <ul
-                  class="lista-usos text-center h-100 d-flex flex-column justify-content-center"
+                  class="m-0 lista-usos text-center h-100 d-flex flex-column justify-content-stretch"
                   -
                 >
                   <li>
-                    <span
-                      >Pavimentos industriales <br />
-                      <i>
-                        - Pisos de hormigón en edificios residenciales y
-                        comerciales. <br />
-                        - Playas de estacionamiento.<br />
+                    Pavimentos industriales <br />
+                    <span>
+                      <b class="with-color">
                         - Caminos.<br />
-                        - Autopistas <br />
-                        - Pisos domésticos.</i
-                      >
+                        - Autopistas. <br />
+                        - Pisos domésticos. <br />
+                        - Playas de estacionamiento.<br />
+                        - Pisos de hormigón en edificios residenciales y
+                        comerciales. <br
+                      /></b>
                     </span>
                   </li>
-                  <li>
-                    <span
-                      >Revestimiento de túneles, muros y estructuras para
-                      contención de aguas y elementos premoldeados.</span
-                    >
+                  <li class="small">
+                    - Refuerzo de hormigon en plateas industriales.
+                  </li>
+                  <li class="w-100 w-lg-50">
+                    - Hormigon y mortero proyectado (Shotcrete).
+                  </li>
+                  <li class="w-100 w-lg-50">
+                    - Para hormigones en los que se desee obtener un refuerzo
+                    extra en zonas sísmicas.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <ul
-            class="d-flex mt-5 flex-column flex-lg-row justify-content-center"
+            class="d-flex flex-column flex-lg-row justify-content-center"
             data-aos="fade-left"
             data-aos-delay="300"
             data-aos-duration="500"
-          >
-            <li class="w-100 w-lg-50">
-              - Hormigon y mortero proyectado (Shotcrete).
-            </li>
-            <li class="w-100 w-lg-50">
-              - Refuerzo de hormigon en plateas industriales.
-            </li>
-          </ul>
+          ></ul>
           <ul
-            class="d-flex mt-5 flex-column flex-lg-row justify-content-center"
+            class="d-flex flex-column flex-lg-row justify-content-center"
             data-aos="fade-left"
             data-aos-delay="300"
             data-aos-duration="500"
           >
             <li class="w-100 w-lg-50">
-              - Para hormigones en los que se desee obtener un refuerzo extra en
-              zonas sísmicas.
+              - Revestimiento de túneles, muros y estructuras para contención de
+              aguas y elementos premoldeados.
             </li>
-            <li class="w-100 w-lg-50">
+            <li class="w-100 w-lg-50 with-color">
               - Reemplazo seguro y eficaz de las mallas electrosoldadas o
               armaduras secundarias en hormigones convencionales, proporcionando
               mayor resistencia ante tensiones multidireccionales.
@@ -291,6 +296,23 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="row">
             <div
               class="col-12 col-lg-3 mt-4"
+              data-aos="fade-up-left"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
+                  <p class="card-text">
+                    Reemplaza a la malla de repartición en pisos de hormigón.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-3 mt-4"
               data-aos="fade-up-right"
               data-aos-delay="0"
               data-aos-duration="500"
@@ -298,12 +320,25 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
-                    <i class="fa fa-random"></i>
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <p class="card-text">Provee refuerzo multidimensional.</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-3 mt-4"
+              data-aos="fade-up-right"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-compress-arrows-alt"></i>
                   </div>
                   <p class="card-text">
-                    Se dispersa uniformemente en el hormigón durante la mezcla y
-                    lo refuerza mecánicamente con una red multidimensional de
-                    fibras.
+                    Reduce la fisuración por retracción plástica.
                   </p>
                 </div>
               </div>
@@ -326,36 +361,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-lg-3 mt-4"
-              data-aos="fade-up-right"
-              data-aos-delay="0"
-              data-aos-duration="500"
-            >
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">
-                    <i class="fas fa-shield-alt"></i>
-                  </div>
-                  <p class="card-text">Provee refuerzo multidimensional.</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-12 col-lg-3 mt-4"
-              data-aos="fade-up-left"
-              data-aos-delay="0"
-              data-aos-duration="500"
-            >
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">
-                    <i class="fas fa-water"></i>
-                  </div>
-                  <p class="card-text">Aumenta la impermeabilidad.</p>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="row mb-5">
             <div
@@ -367,28 +372,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
-                    <i class="fas fa-compress-arrows-alt"></i>
+                    <i class="fa fa-random"></i>
                   </div>
                   <p class="card-text">
-                    Reduce la fisuración por retracción plástica.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-12 col-lg-3 mt-4"
-              data-aos="fade-up-right"
-              data-aos-delay="0"
-              data-aos-duration="500"
-            >
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">
-                    <i class="fas fa-tint-slash"></i>
-                  </div>
-                  <p class="card-text">
-                    No absorbe agua y no afecta el proceso químico de curado del
-                    hormigón.
+                    Se dispersa uniformemente en el hormigón durante la mezcla y
+                    lo refuerza mecánicamente con una red multidimensional de
+                    fibras.
                   </p>
                 </div>
               </div>
@@ -421,10 +410,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
-                    <i class="fas fa-exchange-alt"></i>
+                    <i class="fas fa-water"></i>
+                  </div>
+                  <p class="card-text">Aumenta la impermeabilidad.</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-3 mt-4"
+              data-aos="fade-up-right"
+              data-aos-delay="0"
+              data-aos-duration="500"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <i class="fas fa-tint-slash"></i>
                   </div>
                   <p class="card-text">
-                    Reemplaza a la malla de repartición en pisos de hormigón.
+                    No absorbe agua y no afecta el proceso químico de curado del
+                    hormigón.
                   </p>
                 </div>
               </div>
@@ -541,7 +546,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   data-aos-duration="1000"
                 >
                   <div class="img">
-                    <img src="./assets/2.jpg" alt="" />
+                    <img src="./assets/presentacion.jpg" alt="" />
                   </div>
                 </div>
                 <div
@@ -687,7 +692,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           ></a>
         </div>
         <div class="copyright">
-          &copy; Copyright <strong><span>Produobra</span></strong
+          &copy; Copyright <b><span>Produobra</span></b
           >. All Rights Reserved
         </div>
         <div class="dm">
