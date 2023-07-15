@@ -249,7 +249,7 @@ main {
 .que-es .descripcion {
   width: 80%;
   margin: 2rem auto;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   letter-spacing: 1px;
   text-align: center;
@@ -257,7 +257,6 @@ main {
 }
 
 .que-es i {
-  font-size: 1.2rem;
   color: black;
 }
 
@@ -276,11 +275,15 @@ main {
   font-size: 2rem;
 }
 
+.caracteristicas p {
+  font-size: 1.3rem;
+}
+
 .card {
-  background-color: rgba(77, 72, 72, 0.17);
+  background-color: rgba(55, 52, 52, 0.1);
   margin-top: 0.5em;
   color: black;
-  height: 13rem;
+  height: 18rem;
   width: 98%;
   margin: 0 auto;
   border: none;
@@ -311,7 +314,7 @@ main {
 
 .usos-frecuentes .card {
   height: auto;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 1.5rem;
 }
 
 .usos-frecuentes > ul {
@@ -319,7 +322,7 @@ main {
 }
 
 .usos-frecuentes ul {
-  padding-left: 0;
+  padding-left: 2%;
 }
 
 .usos-frecuentes .pavimentos {
@@ -375,7 +378,7 @@ ul li {
 .usos-frecuentes ul li {
   text-align: center;
   margin: 1rem 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 ul li::before {
@@ -499,6 +502,7 @@ ul li::before {
 .contact {
   width: 100%;
   padding: 0 0 6rem 2%;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -694,7 +698,6 @@ footer {
     width: 60%;
   }
   .que-es .descripcion {
-    font-size: 1.3rem;
     line-height: 1.9;
     letter-spacing: 1px;
   }
